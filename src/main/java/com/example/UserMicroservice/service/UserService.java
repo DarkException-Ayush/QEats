@@ -17,4 +17,6 @@ public interface UserService {
 	public OutputUser getAllUsers(int pageSize, int pageNo, String sortBy);
 
 	public User addUser(@Valid User user);
+
+	public User getUserByNamePassword(String username, String password);
 }
